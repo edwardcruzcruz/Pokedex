@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons left>
+            <ion-back-button [text]="getBackButtonText()" defaultHref="/"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-card *ngIf="pokemon!=null">
+        <ion-card-header>
+            <ion-card-title>
+                <div style="width: 100%; text-align: center;">{{pokemon.pokemon_species.name}}</div>
+            </ion-card-title>
+        </ion-card-header>
+        <img *ngIf="pokemon.entry_number>0 && pokemon.entry_number<10" class="imagen-tamano" src="assets/imgs/00{{pokemon.entry_number}}.png" />
+        <img *ngIf="pokemon.entry_number>9 && pokemon.entry_number<100" class="imagen-tamano" src="assets/imgs/0{{pokemon.entry_number}}.png" />
+        <img *ngIf="pokemon.entry_number>99" class="imagen-tamano" src="assets/imgs/{{pokemon.entry_number}}.png" />
+        <ion-card-content>
+            Más detalle en: {{pokemon.pokemon_species.url}}
+        </ion-card-content>
+    </ion-card>
+    <h4 *ngIf="pokemon==null" text-center>El resumen esta vacio</h4>
+</ion-content>

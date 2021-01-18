@@ -1,0 +1,29 @@
+<ion-item *ngIf="pokemon" [routerLink]="'/pokemon/' + pokemon.entry_number" [detail]="false">
+    <ion-card>
+        <img *ngIf="pokemon.entry_number>0 && pokemon.entry_number<10" class="imagen-tamano" src="assets/imgs/00{{pokemon.entry_number}}.png" />
+        <img *ngIf="pokemon.entry_number>9 && pokemon.entry_number<100" class="imagen-tamano" src="assets/imgs/0{{pokemon.entry_number}}.png" />
+        <img *ngIf="pokemon.entry_number>99" class="imagen-tamano" src="assets/imgs/{{pokemon.entry_number}}.png" />
+        <ion-card-content>
+            <ion-card-title>
+                <div style="width: 100%; text-align: center;">{{pokemon.pokemon_species.name}}</div>
+            </ion-card-title>
+        </ion-card-content>
+    </ion-card>
+</ion-item>
+<!--
+<ion-grid>
+    <ion-row>
+        <ion-col *ngFor="let ingrediente of ingredientes" col-4>
+            <div [ngClass]="{'div-disabled': ingrediente.seleccion==true}">
+                <ion-card class="formato-card-terceary">
+                    <img class="imagen-pizza-tamano" src="{{ingrediente.imagenUrl}}" />
+                    <ion-card-content>
+                        <ion-card-title class="formato-fuente">
+                            {{ingrediente.nombre}}
+                        </ion-card-title>
+                    </ion-card-content>
+                </ion-card>
+            </div>
+        </ion-col>
+    </ion-row>
+</ion-grid>-->
