@@ -55,31 +55,31 @@ $ ionic cordova run android
 Codigo en la carpeta `/pages/home`. Se presentan las opciones de menu y **pantalla principal** de la aplicacion. Aquí podemos observar un listado de pokemon 
 y poder filtrarlo por nombre. 
 
-![Home page](README_captures/home.JPG)  
+![Home page](README_captures/home.png)  
 
 #### Message
 
 Codigo en la carpeta `/pages/message`. Permite visualizar el contenido de cada item en la lista de mensajes(Pagina al crear un proyecto base por defecto).
 
-![Message](README_captures/message.JPG)  
+![Message](README_captures/message.png)  
 
 #### Pokecard
 
 Codigo en la carpeta `/pages/pokecard`. Permite visualizar el contenido de cada item en la lista de pokemon, desde este apartado se puede modificar el contenido de cada item.
 
-![Pokecard](README_captures/pokecard.JPG)
+![Pokecard](README_captures/pokecard.png)
 
 #### View-message
 
 Codigo en la carpeta `/pages/view-message`. Se presenta en detalle al mensaje seleccionado en la lista de mensaje en **HomePage**.
 
-![View-message](README_captures/view-message.JPG)
+![View-message](README_captures/view-message.png)
 
 #### View-Pokemon
 
 Codigo en la carpeta `/page/tradicionales`. Se presenta en detalle al pokemon seleccionado en la lista de pokemon en **HomePage**..
 
-![View-Pokemon](README_captures/view-pokemon.JPG)
+![View-Pokemon](README_captures/view-pokemon.png)
 
 
 ### Desarrollador
